@@ -1,19 +1,23 @@
-#get user email address
 
-email = input("What is your email address?: ").strip()
+def slicer():
+    #get user email address
 
-#slice out user name
+    email = input("What is your email address?: ").strip()
 
-username = email[:email.index("@")]
+    #slice out user name
 
-#slice domain name
+    username = email[:email.index("@")]
 
-domainName = email[email.index("@") + 1:]
+    #slice domain name
 
-#format message
+    domainName = email[email.index("@") + 1:]
 
-output = "Your username is {} and your domain is {}".format(username, domainName)
+    #format message
 
-#display output message
+    output = "Your username is {} and your domain is {}".format(username, domainName)
 
-print(output)
+    #display output message
+
+    print(output)
+
+slicer()
